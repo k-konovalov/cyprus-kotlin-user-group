@@ -11,6 +11,7 @@ android {
 
 dependencies {
     implementation (
+            project(':core:common'),
             project(':core:ui'),
             deps.androidx.appcompat,
             deps.androidx.recycler_view,
