@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "My_Application"
+rootProject.name = "KmmApp"
 include(":KmmTestApiModule")
