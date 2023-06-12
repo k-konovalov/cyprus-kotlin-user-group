@@ -5,5 +5,12 @@ android {
 }
 
 dependencies {
-
+    api (
+            files('libs/KmmTestApiModule-debug.aar'),
+    )
+    implementation(
+            "io.ktor:ktor-client-okhttp:2.2.4",
+            "io.ktor:ktor-client-core:2.2.4",
+            "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1",
+    )
 }
