@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/xmlFragment"
+        android:title="@string/xml" />
+    <!--android:icon="@drawable/ic_details"-->
+    <item
+        android:id="@+id/composeFragment"
+        android:title="@string/compose" />
+</menu>

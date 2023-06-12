@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="xml" translatable="false">Xml</string>
+    <string name="compose" translatable="false">Compose</string>
+</resources>
