@@ -1,0 +1,9 @@
+apply from: "$rootDir/core/common-build.gradle"
+
+android {
+    namespace 'com.konovalov.draggable.coin.view.core.common'
+}
+
+dependencies {
+
+}

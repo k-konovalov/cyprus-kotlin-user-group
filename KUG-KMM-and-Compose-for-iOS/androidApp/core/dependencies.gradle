@@ -1,0 +1,68 @@
+/* Dependencies versions */
+ext.versions = [:]
+// Kotlin
+versions.coroutines = '1.3.0'
+versions.datetime = '0.4.0'
+versions.kotlin_version = '1.8.10'
+versions.kotlinx_serialization_converter = '0.8.0'
+versions.serialization = '1.3.2'
+// AndroidX
+versions.activity = '1.6.1'
+versions.annotation = '1.3.0'
+versions.appcompat = '1.4.2'
+versions.card_view = '1.0.0'
+versions.constraint_layout = '2.1.4'
+versions.core_ktx = '1.9.0'
+versions.fragment = '1.5.1'
+versions.material = '1.8.0'
+versions.navigation = '2.4.1'
+versions.preference = '1.2.0'
+versions.preferences_datastore = '1.0.0'
+versions.recycler_view = '1.2.1'
+// Compose
+versions.accompanist = '0.23.1'
+versions.coil = '2.2.2'
+versions.compose = '1.3.1'
+
+/* Dependencies libs */
+ext.deps = [:]
+
+def kotlinx = [:]
+kotlinx.coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutines"
+kotlinx.datetime = "org.jetbrains.kotlinx:kotlinx-datetime:$versions.datetime"
+kotlinx.serialization_core = "org.jetbrains.kotlinx:kotlinx-serialization-core:$versions.serialization"
+kotlinx.serialization_json = "org.jetbrains.kotlinx:kotlinx-serialization-json:$versions.serialization"
+deps.kotlinx = kotlinx
+
+def androidx = [:]
+androidx.activity = "androidx.activity:activity:$versions.activity"
+androidx.annotation = "androidx.annotation:annotation:$versions.annotation"
+androidx.appcompat = "androidx.appcompat:appcompat:$versions.appcompat"
+androidx.card_view = "androidx.cardview:cardview:$versions.card_view"
+androidx.constraint_layout = "androidx.constraintlayout:constraintlayout:$versions.constraint_layout"
+androidx.core_ktx = "androidx.core:core-ktx:$versions.core_ktx"
+androidx.fragment = "androidx.fragment:fragment:$versions.fragment"
+androidx.lifecycle_runtime_ktx = "androidx.lifecycle:lifecycle-runtime-ktx:$versions.navigation"
+androidx.material = "com.google.android.material:material:$versions.material"
+androidx.navigation_fragment_ktx = "androidx.navigation:navigation-fragment-ktx:$versions.navigation"
+androidx.navigation_ui_ktx = "androidx.navigation:navigation-ui-ktx:$versions.navigation"
+androidx.preference = "androidx.preference:preference:$versions.preference"
+androidx.preferences_datastore = "androidx.datastore:datastore-preferences:$versions.preferences_datastore"
+androidx.recycler_view = "androidx.recyclerview:recyclerview:$versions.recycler_view"
+
+deps.androidx = androidx
+
+def compose = [:]
+compose.accompanist_flowlayout = "com.google.accompanist:accompanist-flowlayout:$versions.accompanist"
+compose.accompanist_swiperefresh = "com.google.accompanist:accompanist-swiperefresh:$versions.accompanist"
+compose.accompanist_themeadapter_appcompat = "com.google.accompanist:accompanist-themeadapter-appcompat:+"
+compose.activity = "androidx.activity:activity-compose:$versions.compose"
+compose.coil = "io.coil-kt:coil-compose:$versions.coil"
+compose.material = "androidx.compose.material:material:$versions.compose"
+compose.runtime_livedata = "androidx.compose.runtime:runtime-livedata:$versions.compose"
+compose.test_manifest = "androidx.compose.ui:ui-test-manifest:$versions.compose"
+compose.ui = "androidx.compose.ui:ui:$versions.compose"
+compose.ui_tooling = "androidx.compose.ui:ui-tooling:$versions.compose"
+compose.ui_tooling_preview = "androidx.compose.ui:ui-tooling-preview:$versions.compose"
+
+deps.compose = compose

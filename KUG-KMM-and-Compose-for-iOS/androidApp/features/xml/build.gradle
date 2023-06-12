@@ -1,0 +1,20 @@
+apply from: "$rootDir/core/common-build.gradle"
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    namespace 'com.konovalov.draggable.coin.view.xml'
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation (
+            project(':core:ui'),
+            deps.androidx.appcompat,
+            deps.androidx.recycler_view,
+            deps.androidx.material,
+            deps.compose.material
+    )
+}

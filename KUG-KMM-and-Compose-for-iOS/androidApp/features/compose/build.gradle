@@ -1,0 +1,32 @@
+apply from: "$rootDir/core/common-build.gradle"
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    namespace 'com.konovalov.draggable.coin.view.compose'
+
+    buildFeatures {
+        viewBinding true
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion "1.4.3"
+    }
+}
+
+dependencies {
+    implementation (
+            project(':core:ui'),
+
+            deps.androidx.core_ktx,
+            deps.androidx.appcompat,
+            deps.compose.activity,
+            deps.compose.ui_tooling_preview,
+            deps.compose.material,
+            deps.compose.accompanist_themeadapter_appcompat,
+    )
+
+    debugImplementation (
+            deps.compose.ui_tooling,
+            deps.compose.test_manifest
+    )
+}

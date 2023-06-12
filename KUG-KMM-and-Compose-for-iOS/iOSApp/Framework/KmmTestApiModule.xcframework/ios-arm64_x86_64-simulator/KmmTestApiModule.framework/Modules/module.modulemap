@@ -1,0 +1,6 @@
+framework module KmmTestApiModule {
+    umbrella header "KmmTestApiModule.h"
+
+    export *
+    module * { export * }
+}

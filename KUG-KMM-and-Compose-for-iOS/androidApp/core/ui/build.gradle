@@ -1,0 +1,15 @@
+apply from: "$rootDir/core/common-build.gradle"
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    namespace 'com.konovalov.draggable.coin.view.core.ui'
+}
+
+dependencies {
+    implementation (
+            deps.androidx.constraint_layout,
+            deps.androidx.material,
+            deps.compose.material,
+            deps.compose.ui,
+    )
+}
