@@ -12,7 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Draggable Coin View"
+rootProject.name = "AndroidApp"
 include ':app',
         ':core:common',
         ':core:ui',
