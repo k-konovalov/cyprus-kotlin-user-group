@@ -9,9 +9,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.network.RickAndMortyHttpClient
 import com.google.accompanist.themeadapter.appcompat.AppCompatTheme
 import com.konovalov.draggable.coin.view.core.ui.theme.DraggableScaredViewTheme
@@ -28,15 +30,7 @@ class ComposeFragment : Fragment() {
                 setViewCompositionStrategy(
                     ViewCompositionStrategy.DisposeOnLifecycleDestroyed(viewLifecycleOwner)
                 )
-                AppCompatTheme {
-                    Surface(
-                        modifier = Modifier.fillMaxSize(),
-                        color = MaterialTheme.colors.background
-                    ) {
-                        Greeting("Android")
-                        Text(text = "Hello world.")
-                    }
-                }
+                makeComposeGreatAgain()
             }
         }
 /*        .also {
@@ -46,6 +40,18 @@ class ComposeFragment : Fragment() {
                 }
             }
         }*/
+
+    @Preview
+    @Composable
+    fun makeComposeGreatAgain() = MaterialTheme {
+        Surface(
+            modifier = Modifier.fillMaxSize(),
+            color = MaterialTheme.colors.background
+        ) {
+            Text(text = "Hello world.")
+            Text(text = "Hello world.")
+        }
+    }
 }
 
 
