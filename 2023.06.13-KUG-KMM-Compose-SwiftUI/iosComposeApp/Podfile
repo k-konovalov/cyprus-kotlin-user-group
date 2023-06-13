@@ -1,0 +1,5 @@
+target 'iosComposeApp' do
+  use_frameworks!
+  platform :ios, '14.1'
+  pod 'sharedComposeUI', :path => '../sharedComposeUI'
+end
