@@ -1,0 +1,16 @@
+PODS:
+  - rickAndMortyApi (1.0)
+
+DEPENDENCIES:
+  - rickAndMortyApi (from `../rickAndMortyApi`)
+
+EXTERNAL SOURCES:
+  rickAndMortyApi:
+    :path: "../rickAndMortyApi"
+
+SPEC CHECKSUMS:
+  rickAndMortyApi: 3656c1e49dd956d8113fe4e3696a434911c43235
+
+PODFILE CHECKSUM: 50a9e812fada9baad55d10cf2eacdec53d3ddc32
+
+COCOAPODS: 1.12.1
